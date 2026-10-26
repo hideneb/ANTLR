@@ -1,11 +1,13 @@
 # ANTLR
 
 ## 1. Required files
+
 - ANTLRWorks 1.5.2
 - Java JDK 8
 - Java.g - Java language grammar
 
 ## 2. Create the folders
+
 ```
 C:\ANTLRWorks\
 │
@@ -20,8 +22,11 @@ C:\ANTLRWorks\
 └── results\
 ```
 ## 3. Install Java JDK
+
 Install Java JDK and run `java-version` in `cmd`. 
+
 You should see output similar to `openjdk version "1.8.0_xxx"`.
+
 Next, run `javac -version`. Expected output is `javac 1.8.0_xxx`.
 
 If either command is not recognized, configure the JDK installation's `bin` directory in your Windows `Path` environment variable.
@@ -145,6 +150,6 @@ Class	          Variables	        Methods	          External calls
 Example	                2	              2	                       1
 ```
 
-you must add custom analysis logic. ANTLRWorks alone does not perform project-wide symbol resolution or automatically classify calls as internal or external.
+You must add custom analysis logic. ANTLRWorks alone does not perform project-wide symbol resolution or automatically classify calls as internal or external.
 
 For example, it can recognize `System.out.println(...)` syntactically, but identifying its declaring type requires semantic information.
